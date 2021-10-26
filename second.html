@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+        <form action="payment_form" method="post">
+        <h1>Payment Form</h1>
+        <hr color="black">
+        </center> 
+        <div>
+            <h2 class="user_details"> User Details : </h2>
+            <p>Name : <input type="text" placeholder="Enter your name" name="name" required></p>
+            <p>Gender : Male<input type="radio" name="gender" id="name"> Female <input type="radio" name="gender" id="name">Others <input type="radio" name="gender" id="name"> </p>
+            <p>
+                Address : <br>
+                <textarea placeholder="Enter you address" name="address" id="address" cols="35" rows="5"></textarea>
+            </p>
+            <p>
+                Email : <input type="email"  required placeholder="xyz@gmail.com">
+            </p>
+            <p>
+                Pincode : <input type="number" required placeholder="6-digit area code">
+            </p>
+        </div>
+        <h2 class="pay_details">Payment Details :</h2>
+        </form>
+        <p>Card Type:
+            <select name="card" id="card">
+                <option value="">Select Card Type</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+            <p>
+                Card Number : <input type="number" placeholder="Enter a 16-digit number" required>
+            </p>
+        </p>
+        <p>
+            Expiry Date : <input type="date"  id="date">
+        </p>
+        <p>
+            CVV : <input type="password" value="" required>
+        </p>
+        <!-- <input type="submit" value="Pay Now"> -->
+        <form action="">
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IDsAslex62ULHe" async> </script> 
+        </form>
+    </div>
+</body>
+</html>
