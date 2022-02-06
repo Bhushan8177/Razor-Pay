@@ -1,1 +1,1 @@
-A simple paymment gateway using HTML,CSS and RazorPay API
+A simple payment gateway using HTML,CSS and RazorPay API
